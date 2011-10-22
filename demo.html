@@ -1,0 +1,52 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css">  
+  <link rel="stylesheet" href="css/style.css" media="all">
+</head>
+<body>
+
+  <div class="container">
+    <div class="content">
+
+      <div class="page-header">
+        <h1><em>ENHANCE!</em></h1>
+      </div>
+
+      <div id="gallery">
+        
+        <div id="active-wrapper">
+          <img src="img/medium/mallard.jpg" />
+        </div>
+
+        <ul id="thumbs" class="media-grid">
+          <li><a href="http://benwatts.ca/wp-content/uploads/2011/07/IMG_0057.jpg"><img src="img/thumbs/mallard.jpg" /></a></li>
+          <li><a href="http://benwatts.ca/wp-content/uploads/2011/07/IMG_9865.jpg"><img src="img/thumbs/aflac.jpg" /></a></li>
+          <li><a href="img/original/duckhat.jpg"><img src="img/thumbs/duckhat.jpg" /></a></li>
+          <li><a href="img/original/pair.jpg"><img src="img/thumbs/pair.jpg" /></a></li>
+          <li><a href="img/original/pig.png"><img src="img/thumbs/pig.png" /></a></li>
+          <li><a href="img/original/tall-duckling.jpg"><img src="img/thumbs/tall-duckling.jpg" /></a></li>      
+          <li><a href="img/original/tall.jpg"><img src="img/thumbs/tall.jpg" /></a></li>
+          <li><a href="img/original/wide.jpg"><img src="img/thumbs/wide.jpg" /></a></li>
+        </ul>
+
+      </div><!-- /#gallery -->
+
+
+
+    </div>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
+  <script src="js/enhance.jquery.js"></script>
+  <script>
+    $('#gallery').enhanceGallery();
+  </script>
+
+</body>
+</html>

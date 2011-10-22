@@ -1,0 +1,28 @@
+#active-wrapper{
+  position: relative;
+  background: cyan;
+  width: 240px;
+  overflow: hidden;
+  margin: 0 0 50px 0;
+  } 
+
+#active-wrapper img{
+  display: block;
+  }
+#active-wrapper .zoomed{
+  position: absolute;
+  top: 0;
+  left: 0;
+  }
+
+#active-image-loading{
+  background: #fff url(../img/icon-loading.gif) 50% 50% no-repeat; 
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 2;
+  text-indent: -900em; overflow: hidden;
+  }

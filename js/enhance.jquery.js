@@ -10,7 +10,6 @@
   var $thumbList, $activeWrapper, $loading;
 
 
-
   $.fn.enhanceGallery = function(options){
 
     if( options ){
@@ -36,7 +35,7 @@
   function swap(image){
     var scale = $activeWrapper.width() / image.originalWidth,
         wrapperWidth  = $activeWrapper.width(),
-        wrapperHeight = (image.originalWidth < wrapperWidth) ? image.originalHeight : image.originalHeight * scale;
+        wrapperHeight = (image.originalWidth < wrapperWidth) ? image.originalHeight : ~~(image.originalHeight * scale);
 
     // empty container, change container's width, append the <img>
     $activeWrapper.empty().height(wrapperHeight).append(image.tag);
